@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giới thiệu bản thân</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <a href="#" class="logo">
+          <img
+            src="./assets/Gemini_Generated_Image_h87oewh87oewh87o.png"
+            alt=""
+          />
+        </a>
+        <button class="menu">☰</button>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="about">
+        <div class="container">
+          <div class="right">
+            <img src="./assets/avatar.jpg" alt="ảnh đại diện" />
+          </div>
+          <div class="left">
+            <h1>Vũ Thành Long</h1>
+            <p>Frontend Intern / Web Developer</p>
+            <button id="view-work">View My Work</button>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <div class="container">
+          <h2>Projects</h2>
+          <p>1 vài dự án của tôi</p>
+
+          <div class="projects-grid">
+            <div class="project-card">
+              <img src="./assets/avatar.jpg" alt="" />
+              <div class="project-card-body">
+                <h3>Dự án 1</h3>
+                <p>
+                  Một web tĩnh giới thiệu sản phẩm, responsive và dùng Flexbox.
+                </p>
+              </div>
+            </div>
+            <div class="project-card">
+              <img src="./assets/avatar.jpg" alt="" />
+              <div class="project-card-body">
+                <h3>Dự án 2</h3>
+                <p>Website CV cá nhân với hiệu ứng cuộn mượt và dark mode.</p>
+              </div>
+            </div>
+            <div class="project-card">
+              <img src="./assets/avatar.jpg" alt="" />
+              <div class="project-card-body">
+                <h3>Dự án 3</h3>
+                <p>Website CV cá nhân với hiệu ứng cuộn mượt và dark mode.</p>
+              </div>
+            </div>
+            <div class="project-card">
+              <img src="./assets/avatar.jpg" alt="" />
+              <div class="project-card-body">
+                <h3>Dự án 4</h3>
+                <p>Website CV cá nhân với hiệu ứng cuộn mượt và dark mode.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact">
+        <div class="container">
+          <h2>Form liên hệ</h2>
+          <form id="contact-form">
+            <div class="form-row">
+              <label for="name">Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Nhập tên của bạn"
+              />
+              <p id="name-error" class="error"></p>
+            </div>
+
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input
+                type="text"
+                id="email"
+                name="email"
+                placeholder="you@example.com"
+              />
+              <p id="email-error" class="error"></p>
+            </div>
+
+            <div class="form-row">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Mời nhập"
+              ></textarea>
+              <p id="message-error" class="error"></p>
+            </div>
+
+            <div class="form-row-btn">
+              <button type="submit" class="btn submit-btn">Submit</button>
+            </div>
+
+            <p id="successMessage"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>© 2025 Vũ Thành Long. All rights reserved.</p>
+        <div class="icon-footer">
+          <a href="#" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#" target="_blank"><i class="fa-brands fa-github"></i></a>
+          <a href="#" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
