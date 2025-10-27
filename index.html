@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Giới thiệu bản thân</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/darkMode.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -13,21 +14,26 @@
   <body>
     <header>
       <div class="container">
-        <a href="#" class="logo">
-          <img
-            src="./assets/Gemini_Generated_Image_h87oewh87oewh87o.png"
-            alt=""
-          />
-        </a>
-        <button class="menu">☰</button>
-        <nav>
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
+        <div>
+          <a href="#" class="logo">
+            <img
+              src="./assets/Gemini_Generated_Image_h87oewh87oewh87o.png"
+              alt=""
+            />
+          </a>
+        </div>
+        <div class="nav-btn">
+          <button id="btn-mode">🌙</button>
+          <button class="menu">☰</button>
+          <nav>
+            <ul>
+              <li><a href="#">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
 
@@ -40,6 +46,11 @@
           <div class="left">
             <h1>Vũ Thành Long</h1>
             <p>Frontend Intern / Web Developer</p>
+            <p>
+              Công ty CNTT hàng đầu, tập trung vào các giải pháp doanh nghiệp,
+              hiện thực hoá tiến trình chuyển đổi số thông qua đổi mới sáng tạo,
+              giúp doanh nghiệp chuyển đổi linh hoạt, thực chất.
+            </p>
             <button id="view-work">View My Work</button>
           </div>
         </div>

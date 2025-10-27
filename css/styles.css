@@ -1,3 +1,8 @@
+:root {
+  --main-color: #d24848;
+  --light-color: #ede1e1;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,11 +15,6 @@ body {
   background-color: #f9f9f9;
   color: #333;
   padding-top: 80px;
-}
-
-:root {
-  --main-color: #d24848;
-  --light-color: #ede1e1;
 }
 
 .container {
@@ -66,6 +66,27 @@ nav a:hover {
   color: white;
   background-color: var(--main-color);
   border-radius: 4px;
+}
+
+.nav-btn {
+  display: flex;
+  justify-content: center;
+}
+
+#btn-mode {
+  background: none;
+  border: 1px solid #999;
+  border-radius: 6px;
+  padding: 6px 10px;
+  cursor: pointer;
+  color: inherit;
+  width: 45px;
+  margin-right: 5px;
+  transition: background-color 0.3s, transform 0.2s;
+}
+#btn-mode:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: scale(1.05);
 }
 
 .menu {
@@ -152,7 +173,6 @@ nav a:hover {
   padding: 0 20px;
 }
 
-/* Cột trái (ảnh) */
 #about .right {
   text-align: center;
 }
@@ -166,7 +186,6 @@ nav a:hover {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Cột phải (nội dung) */
 #about .left {
   width: 100%;
   max-width: 400px;
@@ -174,17 +193,18 @@ nav a:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 #about .left h1 {
   font-size: 2rem;
   margin-bottom: 10px;
-  color: #333;
+  /* color: #333; */
 }
 
 #about .left p {
   font-size: 1.1rem;
-  color: #555;
+  /* color: #555; */
   line-height: 1.6;
   margin-bottom: 20px;
 }
@@ -276,6 +296,14 @@ textarea {
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus,
+textarea:focus {
+  border-color: var(--light-color);
+  box-shadow: 0 0 5px rgba(210, 72, 72, 0.4);
+  outline: none;
 }
 
 .btn {
@@ -312,15 +340,15 @@ textarea {
 
 /* Footer */
 footer {
-  background-color: #333;
-  color: white;
+  background-color: var(--light-color);
+  color: black;
   text-align: center;
   padding: 20px 0;
-  margin-top: 50px;
+  /* margin-top: 10px; */
 }
 
 .icon-footer a {
-  color: white;
+  color: black;
   margin: 0 8px;
   text-decoration: none;
 }

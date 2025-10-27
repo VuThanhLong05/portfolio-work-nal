@@ -70,3 +70,12 @@ form.addEventListener("submit", function (e) {
     form.reset();
   }
 });
+
+// Mode
+const themeBtn = document.querySelector("#btn-mode");
+const body = document.body;
+
+themeBtn.addEventListener("click", () => {
+  body.classList.toggle("dark");
+});
+
