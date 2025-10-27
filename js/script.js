@@ -67,6 +67,16 @@ form.addEventListener("submit", function (e) {
 
   if (valid) {
     successMsg.textContent = "✅ Cảm ơn bạn đã gửi liên hệ!";
+
+    // Lưu dữ liệu vào localStorage
+    const formData = {
+      name: name,
+      email: email,
+      message: message,
+    };
+    localStorage.setItem("contactForm", JSON.stringify(formData));
+    console.log(formData);
+
     form.reset();
   }
 });
@@ -78,4 +88,3 @@ const body = document.body;
 themeBtn.addEventListener("click", () => {
   body.classList.toggle("dark");
 });
-
